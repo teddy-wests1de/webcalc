@@ -2,8 +2,68 @@
 Date: 06 February 2023.
 Version 1.0 */
 
-/* Reset page borders and spacing */
+/* Reset page borders and Variables */
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --bg-color1: rgba(80, 75, 75, 0.5);
+    --bg-color2: rgba(197, 179, 179, 0.527);
+}
+
+/* Sets font size and family */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* Page Header */
+.header-box, .footer-box  {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 70%;
+    margin: 20px auto;
+    background: var(--bg-color1);
+    padding: 20px;
+}
+
+.header-box {
+    border-radius: 5px 5px 0 0;
+}
+
+.footer-box {
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 5px;
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
+    width: 70%;
+    background: var(--bg-color2);
+    margin: auto;
+    height: 65vh;
+
+}
+.answer-box {
+    grid-column: 1 / 5;
+    text-align: right;
+    font-size: 2rem;
+    padding: 0 20px;
+    letter-spacing: 0.2rem;
+}
+.calcButtons {
+    font-size: 2rem;
+
+}
+.but19 {
+    grid-column: 3 / 4;
+    grid-row: 6 / 8;
+}
+@media screen and (max-width: 460px) {
+    .header-box, .footer-box {
+        font-size: 0.8rem;
+    }
 }
