@@ -40,19 +40,22 @@ html {
 .grid-parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
     gap: 0.4rem;
     width: 70%;
     background: var(--bg-color2);
     margin: auto;
     height: 65vh;
-
+    padding: 5px;
 }
 .answer-box {
     grid-column: 1 / 5;
     text-align: right;
     font-size: 2rem;
     padding: 0 20px;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.3rem;
+    border-style: groove;
+    border-radius: 4px;
 }
 .calcButtons {
     font-size: 2rem;
@@ -65,5 +68,8 @@ html {
 @media screen and (max-width: 460px) {
     .header-box, .footer-box {
         font-size: 0.8rem;
+    }
+    .calcButtons {
+        font-size: 1.5rem;
     }
 }
