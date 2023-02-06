@@ -1,0 +1,10 @@
+/* Stylesheet for Web Calculator - by Elrico Landrew
+Date: 06 February 2023.
+Version 1.0 */
+
+/* Reset page borders and spacing */
+
+* {
+    box-sizing: border-box;
+    
+}
